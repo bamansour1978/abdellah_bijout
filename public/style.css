@@ -1,0 +1,229 @@
+*::-webkit-scrollbar {
+    width: 8px;
+}
+
+*::-webkit-scrollbar-thumb {
+    width: 8px;
+    background-color: gray;
+}
+
+.slider-chunk {
+    padding: 20px;
+}
+
+.slider-chunk .slider-width{
+    display: flex;
+    width: 60%;
+    margin: auto;
+}
+
+.slider-chunk .slider-container{
+    background-color: white;
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;
+    border-radius: 20px;
+    display: flex;
+}
+
+.slider-chunk .slider-container img {
+    width: 250px;
+    border-radius: 20px;
+    margin-right: 20px;
+}
+
+@media screen and (min-width:700px) and (max-width:1060px) {
+    .slider-chunk .slider-width{
+        width: 90%;
+    }
+
+    .slider-chunk .slider-container{
+        width: 70%;
+    }
+
+    .slider-chunk .slider-container img{
+        width: 200px;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .slider-chunk .slider-width{
+        width: 85%;
+    }
+
+    .slider-chunk .slider-container{
+        width: 100%;
+    }
+
+    .slider-chunk .slider-container img{
+        width: 120px;
+    }
+}
+.about {
+    display: flex;
+}
+
+.about img{
+    width: 500px ;
+    border-radius:20px;
+    display: flex;
+    margin: auto;
+}
+
+.about-body{
+    width: 60%;
+    margin-left: 20px;
+}
+
+@media screen and (max-width : 900px) {
+    .about {
+        display: block;
+        text-align: center;
+    }
+
+    .about img{
+        width: 450px ;
+        border-radius:20px;
+        margin-bottom: 20px;
+    }
+
+    .about-body{
+        width: 100%;
+        margin-left: 0px;
+    }
+}   
+
+    .dashboard {
+        width: 100%;
+        height: 100vh;
+        background-color: #ffffff;
+    }
+    
+    .dashboard .header {
+        width: 100%;
+        height: 7vh;
+        padding: 0px 25px;
+        padding-top: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .dashboard .header .l_side {
+        display: flex;
+        width: auto;
+    }
+    
+    .dashboard .header .l_side span {
+        font-size: 27px;
+        display: flex;
+        align-items: center;
+        margin-right: 25px;
+        cursor: pointer;
+    }
+    
+    .dashboard .header .l_side img {
+        width: 100px;
+    }
+    
+    .dashboard .header .r_side h5 span {
+        font-size: 25px;
+        color: #d30000;
+    }
+    
+    .dashboard .content {
+        width: 100%;
+        display: flex;
+        height: 93vh;
+    }
+    
+    .dashboard .content .menu {
+        width: 13%;
+        background-color: #ffffff;
+        padding: 10px 0;
+    }
+    
+    .dashboard .content .menu.menu_hide {
+        width: 4.5%;
+    }
+    
+    .dashboard .content .menu .nav_bar {
+        width: 100%;
+        height: 93%;
+        padding-top: 20px;
+    }
+    
+    .dashboard .content .menu .nav_bar a {
+        display: flex;
+        align-items: end;
+        border-top-left-radius: 25px;
+        border-bottom-left-radius: 25px;
+        padding: 10px 15px;
+        margin-top: 20px;
+        margin-left: 10px;
+        text-decoration: none;
+        color: #000;
+        transition: all ease .3s;
+    }
+    
+    .dashboard .content .menu .nav_bar a:hover {
+        color: #8c0000;
+    }
+    
+    .dashboard .content .menu .nav_bar a span {
+        margin-right: 12px;
+        font-size: 25px;
+    }
+    
+    .dashboard .content .menu .nav_bar a .h5s.h5s_hide {
+        display: none;
+    }
+    
+    .dashboard .content .menu .footer {
+        height: 7%;
+        background-color: rgb(0, 0, 0);
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        color: #f1f1f1;
+        margin: 0 10px;
+    }
+    
+    .dashboard .content .menu .footer a {
+        display: flex;
+        align-items: center;
+        color: #fff;
+        text-decoration: none;
+        transition: all ease .3s;
+    }
+    
+    .dashboard .content .menu .footer a:hover {
+        color: #d30000;
+    }
+    
+    .dashboard .content .menu .footer a span {
+        margin-right: 5px;
+        font-size: 18px;
+    }
+    
+    .dashboard .content .menu .footer a span.logout {
+        margin-right: 0;
+        font-size: 20px;
+    }
+    
+    .dashboard .content .menu .footer a .logout_footer.footer_hide {
+        display: none;
+    }
+    
+    .dashboard .content .dash {
+        width: 87%;
+        background-color: #e9e9e9;
+        border-radius: 20px;
+        padding: 20px;
+        margin: 10px;
+        margin-left: 0;
+    }
+    
+    .dashboard .content .dash.dash_hide {
+        width: 95.5%;
+    }
