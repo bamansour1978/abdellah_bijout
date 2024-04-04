@@ -36,3 +36,25 @@ Route::get('/dashboard', [App\Http\Controllers\HomeController::class, 'index'])-
 Route::get('/produits', [App\Http\Controllers\HomeController::class, 'produits'])->name('produits');
 Route::get('/commands', [App\Http\Controllers\HomeController::class, 'commands'])->name('commands');
 Route::get('/admins', [App\Http\Controllers\HomeController::class, 'admins'])->name('admins');
+Route::get('/dashboard', [App\Http\Controllers\HomeController::class, 'index'])->name('dashboard');
+Route::get('/produits', [App\Http\Controllers\HomeController::class, 'produits'])->name('produits');
+Route::get('/commands', [App\Http\Controllers\HomeController::class, 'commands'])->name('commands');
+Route::get('/admins', [App\Http\Controllers\HomeController::class, 'admins'])->name('admins');
+Route::get('/addadmin', [App\Http\Controllers\HomeController::class, 'addadmin'])->name('addadmin');
+Route::post('/addadmin', [App\Http\Controllers\HomeController::class, 'createadmin'])->name('createadmin');
+
+Route::get('/edit/{id}', [App\Http\Controllers\HomeController::class, 'edit'])->name('edit');
+Route::put('/update/{id}', [App\Http\Controllers\HomeController::class, 'update'])->name('update');
+Route::get('/deletep/{id}',[HomeController::class,"destroyp"]);
+Route::get('/deletec/{id}',[HomeController::class,"destroyc"]);
+Route::get('/deletea/{id}',[HomeController::class,"destroya"]);
+
+Route::put('/canceled/{id}', [App\Http\Controllers\HomeController::class, 'canceledcommand'])->name('canceled');
+Route::put('/confirmed/{id}', [App\Http\Controllers\HomeController::class, 'confirmedcommand'])->name('confirmed');
+
+Route::get('/details/{id}', [App\Http\Controllers\HomeController::class, 'details'])->name('details');
+Route::get('/ajouterProduit', [App\Http\Controllers\HomeController::class, 'ajouter'])->name('ajouter');
+Route::post('/ajouterProduit', [App\Http\Controllers\HomeController::class, 'store'])->name('store');
+
+Route::get('/ajouterImg', [App\Http\Controllers\HomeController::class, 'ajouterImg'])->name('ajouterImg');
+Route::post('/ajouterImg', [App\Http\Controllers\HomeController::class, 'storeImg'])->name('storeImg');
