@@ -3,7 +3,7 @@
 @section('content')
 <div class="bg-black mt-5 p-4">
     <div class="about mx-auto text-white">
-            <img src="{{ asset('imgs/cosmetiques.jpg') }}" alt="">
+            <img src="{{ asset('storage/imgs/cosmetiques.jpg') }}" alt="">
         <div class="about-body">
             <h2> Bijouterie MOTAWAKIL</h2>
             <h5>magasin D'or et de Diammond</h5>

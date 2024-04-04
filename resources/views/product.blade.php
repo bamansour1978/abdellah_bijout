@@ -4,7 +4,7 @@
 <div class="product mt-5 d-flex mx-auto p-4 row" style="background-color: black;">
     @foreach($produits as $produit)
     <div class="img col-sm-6">
-        <img src="{{ asset('imgs/' . $produit->image ) }}" alt="" class="w-100">
+        <img src="{{ asset('storage/imgs/' . $produit->image ) }}" alt="" class="w-100">
     </div>
     <div class="content px-4 text-white col-sm-6 text-warning">
         <h3>{{$produit->category}}</h3>
@@ -22,7 +22,7 @@
             <input type="text" name="ville" placeholder="ville ..." class="form-control mb-3 w-75"> 
             <input type="number" name="qty" placeholder="quantité ..." class="form-control mb-3 w-50" required maxlength="5" value="1">
             <button class="btn btn-warning text-dark">SUBMIT</button>
-            <a href=" https://wa.me/+2120775046632" class="btn btn-success">Confirm In WhatsApp</a>
+            <a href=" https://wa.me/+212671060636" class="btn btn-success">Confirm In WhatsApp</a>
         </form>
     </div>
     @endforeach

@@ -4,7 +4,7 @@
 @section('content')
 
 <div class="img-banner">
-    <img class="d-flex w-100 mt-3" src="{{ asset('imgs/banner.jpg') }}" alt="banner">
+    <img class="d-flex w-100 mt-3" src="{{ asset('storage/imgs/banner.jpg') }}" alt="banner">
 </div>
 <div id="productSlider" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner background: rgb(180,137,86)">
@@ -14,7 +14,7 @@
                         <div class="slider-width">
                             @foreach($chunk as $sliders)
                             <div class="slider-container">
-                                <img src="{{ asset('imgs/' . $sliders->image ) }}" class="slider-img" alt="{{ $sliders->category }}">
+                                <img src="{{ asset('storage/imgs/' . $sliders->image ) }}" class="slider-img" alt="{{ $sliders->category }}">
                                 <div>
                                     <h5>{{ $sliders->nouvaute }}</h5>
                                     <h4>{{ $sliders->category }}</h4>
@@ -47,7 +47,7 @@
             <a href=" https://wa.me/+2120775046632" class="btn btn-dark text-warning">ORDER</a>
         </div>
         <div class="col-md-5 col-lg-5 col-xl-5 mx-auto text-center">
-            <img src="{{ asset('imgs/cmd.jpg') }}" alt="" style="width:400px;border-radius:20px">
+            <img src="{{ asset('storage/imgs/cmd.jpg') }}" alt="" style="width:400px;border-radius:20px">
         </div>
     </div>
     <div class="categories text-center bg-black p-2 my-4">
@@ -77,7 +77,7 @@
         <div class="row d-flex mx-auto text-md-start">
             @foreach($produits as $produit)
             <div class="col-md-5 col-lg-5 col-xl-4 d-flex mb-4 align-items-center mx-auto">
-                <img src="{{ asset('imgs/' . $produit->image ) }}" alt="" style="width:200px;border-radius:20px;margin-right:10px">
+                <img src="{{ asset('storage/imgs/' . $produit->image ) }}" alt="" style="width:200px;border-radius:20px;margin-right:10px">
                 <div class="infos ">
                     <h4 class="card-text text-warning">{{$produit->category}}</h4>
                     <h5 class="card-text text-warning">{{$produit->modele}}</h5>
@@ -110,3 +110,4 @@
         </div>
     </div>
     @endsection
+    

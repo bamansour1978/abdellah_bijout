@@ -13,7 +13,7 @@
         <div class="row d-flex mx-auto text-md-start">
             @foreach($produits as $produit)
             <div class="col-md-5 col-lg-5 col-xl-4 d-flex mb-4 align-items-center mx-auto">
-                <img src="{{ asset('imgs/' . $produit->image ) }}" alt="" style="width:200px;border-radius:20px;margin-right:10px">
+                <img src="{{ asset('storage/imgs/' . $produit->image ) }}" alt="" style="width:200px;border-radius:20px;margin-right:10px">
                 <div class="infos ">
                     <h4 class="card-text text-warning">{{$produit->category}}</h4>
                     <h6 class="card-text text-warning">SIZE : {{$produit->size}} CM</h6>
