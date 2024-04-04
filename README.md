@@ -1,4 +1,4 @@
-# motawakipapp
+# motawakilapp
 
 ## Installation
 
